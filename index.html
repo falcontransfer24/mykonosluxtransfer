@@ -6,179 +6,46 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-      background:
-        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
-        url('https://images.unsplash.com/photo-1549921296-3ecf9c9b5f87') center/cover fixed no-repeat;
+      background: black;
     }
 
-    .page {
-      min-height: 100vh;
-      padding: 35px 20px;
-      border: 14px solid #b89b5e;
-      box-sizing: border-box;
-    }
-
-    .ornament {
-      border: 3px solid #b89b5e;
-      padding: 30px;
-      max-width: 1050px;
+    .wrapper {
+      position: relative;
+      max-width: 1200px;
       margin: auto;
-      background: rgba(0,0,0,0.45);
     }
 
-    .logo {
-      text-align: center;
-      font-size: 42px;
-      font-weight: bold;
-      letter-spacing: 6px;
-      color: #b89b5e;
-    }
-
-    .subtitle {
-      text-align: center;
-      letter-spacing: 4px;
-      color: #d6c08a;
-      margin-bottom: 35px;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 46px;
-      margin: 15px 0;
-    }
-
-    .intro {
-      text-align: center;
-      font-size: 18px;
+    .bg {
+      width: 100%;
+      display: block;
     }
 
     .btn {
-      display: block;
-      width: fit-content;
-      margin: 25px auto 40px;
-      padding: 15px 32px;
-      background: #b89b5e;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 18px 30px;
+      background: rgba(198,167,94,0.95);
       color: black;
-      text-decoration: none;
       font-weight: bold;
-      font-size: 18px;
-      border-radius: 4px;
-    }
-
-    .grid {
-      display: flex;
-      gap: 50px;
-      margin-top: 30px;
-    }
-
-    .col {
-      flex: 1;
-      background: rgba(0,0,0,0.45);
-      padding: 22px;
-      border: 1px solid #b89b5e;
-    }
-
-    h2 {
-      color: #b89b5e;
-      margin-top: 0;
-    }
-
-    ul {
-      padding-left: 20px;
-      line-height: 1.8;
-    }
-
-    .contact {
-      text-align: center;
-      margin-top: 45px;
-      padding-top: 30px;
-      border-top: 1px solid #b89b5e;
-    }
-
-    .qr img {
-      margin-top: 15px;
-      border: 6px solid white;
-    }
-
-    .greek-line {
-      text-align: center;
-      color: #b89b5e;
-      letter-spacing: 8px;
-      font-size: 22px;
-      margin: 20px 0;
-    }
-
-    @media (max-width: 700px) {
-      .grid {
-        flex-direction: column;
-      }
-
-      h1 {
-        font-size: 34px;
-      }
-
-      .logo {
-        font-size: 32px;
-      }
+      text-decoration: none;
+      font-size: 20px;
+      border-radius: 6px;
     }
   </style>
 </head>
 
 <body>
 
-<div class="page">
-  <div class="ornament">
+<div class="wrapper">
 
-    <div class="greek-line">◆ ◆ ◆ ◆ ◆</div>
+  <img src="falcon.jpg" class="bg">
 
-    <div class="logo">FALCON</div>
-    <div class="subtitle">TRANSFER • MYKONOS</div>
+  <a class="btn" href="https://wa.me/306981847324">
+    Book via WhatsApp
+  </a>
 
-    <h1>Luxury Private Transfers</h1>
-    <p class="intro">Airport, Port, Hotel & Villa transfers in Mykonos</p>
-
-    <a class="btn" href="https://wa.me/306981847324">
-      Book via WhatsApp
-    </a>
-
-    <div class="grid">
-
-      <div class="col">
-        <h2>Our Services</h2>
-        <ul>
-          <li>Airport Transfers</li>
-          <li>Port Transfers</li>
-          <li>Hotel Transfers</li>
-          <li>Villa Transfers</li>
-          <li>Private Chauffeur</li>
-        </ul>
-      </div>
-
-      <div class="col">
-        <h2>Prices</h2>
-        <p>Airport → Mykonos Town: from €30</p>
-        <p>Airport → Paradise Beach: from €40</p>
-        <p>Airport → Elia Beach: from €50</p>
-        <p>Port → Hotel / Villa: upon request</p>
-      </div>
-
-    </div>
-
-    <div class="contact">
-      <h2>Contact</h2>
-      <p>WhatsApp: +30 698 184 7324</p>
-      <p>Email: falconjmk@gmail.com</p>
-
-      <div class="qr">
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/306981847324">
-      </div>
-    </div>
-
-    <div class="greek-line">◆ ◆ ◆ ◆ ◆</div>
-
-  </div>
 </div>
 
 </body>
