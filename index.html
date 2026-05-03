@@ -24,7 +24,6 @@
       position: absolute;
       top: 16%;
       left: 13%;
-      transform: none;
       padding: 14px 26px;
       background: linear-gradient(135deg, #d4af37, #f5e6a3);
       color: #111;
@@ -33,13 +32,26 @@
       font-size: 18px;
       border-radius: 6px;
     }
+
     .languages {
-  color: #e6d3a3;
-  font-size: 18px;      /* крупніше, але не кричить */
-  margin-top: 18px;
-  text-align: center;
-  letter-spacing: 1.5px; /* дає “преміум” ефект */
-}
+      color: #e6d3a3;
+      font-size: 18px;
+      margin-top: 18px;
+      text-align: center;
+      letter-spacing: 1.5px;
+    }
+
+    /* ОЦЕ НОВИЙ QR */
+    .qr {
+      position: absolute;
+      bottom: 14%;
+      right: 12%;
+      width: 120px;
+      background: white;
+      padding: 6px;
+      border-radius: 8px;
+    }
+
   </style>
 </head>
 
@@ -52,9 +64,14 @@
   <a class="btn" href="https://wa.me/306981847324">
     Book via WhatsApp
   </a>
-<p class="languages">
-  Service available in English, Greek, Ukrainian and Russian.
-</p>
+
+  <!-- ОЦЕ ВАЖЛИВО -->
+  <img src="qr.png" class="qr">
+
+  <p class="languages">
+    Service available in English, Greek, Ukrainian and Russian.
+  </p>
+
 </div>
 
 </body>
