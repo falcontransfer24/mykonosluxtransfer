@@ -36,30 +36,32 @@ color: #111;
       white-space: nowrap;
     }
 
-    .price-btn {
-      position: absolute;
-      top: 6%;
-      right: 8%;
+   .price-btn {
+  position: absolute;
+  top: 6%;
+  right: 8%;
 
-      padding: 12px 22px;
+  padding: 12px 26px;
 
-      background: rgba(255,255,255,0.08);
-backdrop-filter: blur(6px);
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
 
-color: #f5e6a3;
+  color: #111;
 
-border: 1px solid rgba(255,255,255,0.25);
+  font-weight: bold;
+  font-size: 16px;
 
-      font-weight: bold;
-      font-size: 16px;
+  border: 1.5px solid rgba(255,255,255,0.45);
+  border-radius: 40px;
 
-      border: none;
-      border-radius: 6px;
+  cursor: pointer;
 
-      cursor: pointer;
+  z-index: 10;
 
-      z-index: 10;
-    }
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
     .price-box {
       display: none;
@@ -168,8 +170,8 @@ border: 1px solid rgba(255,255,255,0.25);
     </a>
 
     <button class="price-btn" onclick="togglePrices()">
-      Prices
-    </button>
+  Prices →
+</button>
 
     <div id="prices" class="price-box">
       Airport → Mykonos Town — from €30<br>
