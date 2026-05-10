@@ -31,6 +31,8 @@
       text-decoration: none;
       font-size: 18px;
       border-radius: 6px;
+      z-index: 10;
+      white-space: nowrap;
     }
 
     .languages {
@@ -41,43 +43,60 @@
       letter-spacing: 1.5px;
     }
 
-    /* ОЦЕ НОВИЙ QR */
     .qr {
-  position: absolute;
-
-  bottom: 58px;
-  right: 430px;
-
-  width: 72px;   /* було завелике — зменшили */
-  height: 72px;
-
-  background: white;
-  padding: 3px;          /* тонка біла рамка */
-  
-  border-radius: 6px;
-  border: 1.5px solid #c9b37a; /* золота рамка як у дизайні */
-
-  z-index: 10;
+      position: absolute;
+      bottom: 58px;
+      right: 430px;
+      width: 72px;
+      height: 72px;
+      background: white;
+      padding: 3px;
+      border-radius: 6px;
+      border: 1.5px solid #c9b37a;
+      z-index: 10;
     }
 
+    @media (max-width: 768px) {
+      .btn {
+        top: 12%;
+        left: 12%;
+        padding: 7px 12px;
+        font-size: 11px;
+        border-radius: 4px;
+      }
+
+      .languages {
+        font-size: 12px;
+        margin-top: 12px;
+        padding: 0 12px;
+        letter-spacing: 1px;
+      }
+
+      .qr {
+        width: 48px;
+        height: 48px;
+        bottom: 35px;
+        right: 38%;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-<div class="wrapper">
+  <div class="wrapper">
 
-  <img src="falcon.png" class="bg">
-  
-<a class="btn" href="https://api.whatsapp.com/send?phone=306981847324&text=Hello%2C%20I%20would%20like%20to%20book%20a%20transfer%20in%20Mykonos.%0A%0ANumber%20of%20passengers:%0ANumber%20of%20luggage:%0AFlight%20number:%0APick-up%20location:%0ADrop-off%20location:%0ADate:%0ATime:%0AChild%20seat%20needed:%0AAdditional%20notes:" target="_blank">
-  Book via WhatsApp
-</a>
+    <img src="falcon.png" class="bg">
 
- <p class="languages">
-    Service available in English, Greek, Ukrainian and Russian.
-  </p>
+    <a class="btn" href="https://api.whatsapp.com/send?phone=306981847324&text=Hello%2C%20I%20would%20like%20to%20book%20a%20transfer%20in%20Mykonos.%0A%0ANumber%20of%20passengers:%0ANumber%20of%20luggage:%0AFlight%20number:%0APick-up%20location:%0ADrop-off%20location:%0ADate:%0ATime:%0AChild%20seat%20needed:%0AAdditional%20notes:" target="_blank">
+      Book via WhatsApp
+    </a>
 
-</div>
+    <p class="languages">
+      Service available in English, Greek, Ukrainian and Russian.
+    </p>
+
+  </div>
 
 </body>
 </html>
