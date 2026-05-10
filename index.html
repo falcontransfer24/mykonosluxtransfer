@@ -36,6 +36,51 @@
       white-space: nowrap;
     }
 
+    .price-btn {
+      position: absolute;
+      top: 6%;
+      right: 8%;
+
+      padding: 12px 22px;
+
+      background: linear-gradient(135deg, #d4af37, #f5e6a3);
+      color: #111;
+
+      font-weight: bold;
+      font-size: 16px;
+
+      border: none;
+      border-radius: 6px;
+
+      cursor: pointer;
+
+      z-index: 10;
+    }
+
+    .price-box {
+      display: none;
+
+      position: absolute;
+      top: 14%;
+      right: 8%;
+
+      width: 260px;
+
+      background: rgba(0,0,0,0.92);
+
+      color: #e6d3a3;
+
+      border: 1px solid #c9b37a;
+      border-radius: 8px;
+
+      padding: 16px;
+
+      line-height: 1.8;
+      font-size: 15px;
+
+      z-index: 20;
+    }
+
     .languages {
       color: #e6d3a3;
       font-size: 18px;
@@ -59,31 +104,52 @@
 
     @media screen and (max-width: 768px) {
 
-  .btn {
-    top: 60% !important;
-    left: 12.5% !important;
+      .btn {
+        top: 60% !important;
+        left: 12.5% !important;
 
-    font-size: 6px !important;
-    padding: 3px 6px !important;
+        font-size: 6px !important;
+        padding: 3px 6px !important;
 
-    border-radius: 3px;
-  }
+        border-radius: 3px;
+      }
 
-  .languages {
-    font-size: 12px;
-    margin-top: 12px;
-    padding: 0 12px;
-    letter-spacing: 1px;
-  }
+      .price-btn {
+        top: 6%;
+        right: 6%;
 
-  .qr {
-    width: 48px;
-    height: 48px;
-    bottom: 35px;
-    right: 38%;
-  }
+        font-size: 10px;
+        padding: 6px 12px;
+      }
 
-}
+      .price-box {
+        top: 13%;
+        right: 6%;
+
+        width: 170px;
+
+        font-size: 10px;
+        padding: 10px;
+
+        line-height: 1.6;
+      }
+
+      .languages {
+        font-size: 12px;
+        margin-top: 12px;
+        padding: 0 12px;
+        letter-spacing: 1px;
+      }
+
+      .qr {
+        width: 48px;
+        height: 48px;
+        bottom: 35px;
+        right: 38%;
+      }
+
+    }
+
   </style>
 </head>
 
@@ -97,11 +163,34 @@
       Book via WhatsApp
     </a>
 
+    <button class="price-btn" onclick="togglePrices()">
+      Prices
+    </button>
+
+    <div id="prices" class="price-box">
+      Airport → Mykonos Town — from €30<br>
+      Airport → Paradise Beach — from €40<br>
+      Airport → Elia Beach — from €50<br>
+      Port → Hotel/Villa — upon request
+    </div>
+
     <p class="languages">
       Service available in English, Greek, Ukrainian and Russian.
     </p>
 
   </div>
+
+  <script>
+    function togglePrices() {
+      var box = document.getElementById("prices");
+
+      if (box.style.display === "block") {
+        box.style.display = "none";
+      } else {
+        box.style.display = "block";
+      }
+    }
+  </script>
 
 </body>
 </html>
